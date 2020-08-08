@@ -1,0 +1,92 @@
+Para decidir quando devemos usar um formulário nas nossas páginas, alguns motivos podem ser analisados:
+ ° Quando queremos enviar os dados para um servidor
+ ° Quando queremos capturar informações que o usuário digitar
+ ° Quando queremos enviar os dados para uma outra página
+
+Formulario (criação)
+A tag é <form></form> para criar um formulario..
+segundo passo e sempre colocar um <input type="">Toda tag de input tem que ter um tipo, e a primeira informação que nós queremos absorver do usuário é o nome dele. Então o input tem sempre um tipo, e nesse caso o tipo é o texto, o usuário vai digitar texto em um campo.
+A tag <label> é uma etiqueta para a entrada de dados, para o <input>.
+Dentro do formulário, nós sempre usamos uma etiqueta para o input. É um <label>Nome e sobrenome</label> para um input. Esse par sempre anda junto. Eu tenho um label e tenho um input. Eu tenho uma informação sobre para que serve aquela entrada de dados e efetivamente a entrada de dados.
+
+Todo formulário sempre vai ter um outro input, esse não precisa ter label, que vai ser do tipo <input type=“submit”>. Ou seja, de envio, onde eu mando aqueles dados para um servidor, e-mail, ou para uma próxima página. Se eu salvar e recarregar, agora temos um botão aqui com o texto “Enviar”.
+
+ !!!!!!A propriedade padding serve para alterarmos o espaçamento interno, entre o conteúdo e a borda.!!!!!!!
+
+Nós usamos a tag <textarea>. Eu quero que usuário tenha a possibilidade de colocar mais de uma linha de texto, um conteúdo complexo. O textarea, diferente da tag de input, é uma tag de conteúdo. Então ela abre e fecha <textarea></textarea>. Ainda dentro do textarea e legal configurar usando Cols e rows, sendo cols= a coluna e rows=a linhas 
+
+eu vou criar um input que vai ter o tipo “radio, e assim como eu botei no meu input do submit, ele vai ter um valor aqui, e o primeiro vai ser “email”, <input type=“radio” value=“email”> o tipop radio são as bolinhas para selecionar 
+
+mas para q nao fique todos selecionado dentro do input configure o (name=""). pq com isso eles fazem parte do mesmo grupo 
+
+
+Hierarquia no CSS
+Quando temos duas tags, nós temos o dobro da força do seletor. Todo seletor é configurado a partir de uma força.
+
+ID -- Class --- Tag 
+
+p = 1
+
+form p = 1 + 1 = 2 
+
+.teste = 10
+
+id = 100
+
+Então sempre que estamos criando CSS, precisamos pensar em o quão específico é o nosso marcador e o quão forte ele vai ser para que não seja sobrescrito por qualquer outro, e que não cometamos nenhum erro no nosso código.
+ Por isso a recomendação de criar sempre classes para os elementos é muito boa, ele não é genérico o suficiente para que todas as vezes que eu mude a tag ele seja alterado; e ele não é específico igual a um identificador para que só funcione naquele elemento. Ele é um estilo que pode ser replicado várias vezes como a classe, e várias vezes em vários elementos.
+
+mais forte que todos esses são em inline que fica no html .. 
+
+Selecionando opções
+O seletor não é um campo do tipo input, ele é um campo do tipo select, e um campo do tipo select tem dentro dele várias opções. As opções são campos de conteúdo, e aqui eu vou colocar os valores: <option>Manhã</option>, uma outra opção que é a <option>Tarde</option> e uma outra opção que é a <option>Noite</option>. E aqui, para ter o texto dizendo qual o horário prefere ser atendido, eu também vou colocar um parágrafo <p>Qual horário prefere ser atendido?</p>.
+
+!!Mobile Input Types!!
+
+Dados importantes nos inputs
+sempre que temos um input e queremos que ele seja preenchido, nós podemos colocar na tag do input uma palavra reservada chamada “required”, que quer dizer “obrigatório”.
+
+ Em alguns lugares, vemos esses campos com uma sugestão de preenchimento, e essa sugestão de preenchimento pode ser adicionada no nosso campo de e-mail com uma propriedade chamada “placeholder”. Ou seja, ela está ocupando aquele espaço ali até que ele comece a digitar.
+ E aqui eu vou dizer que “=“seuemail@dominio.com”>”. E no telefone, eu também vou colocar um placeholder dizendo que eu quero o DDD “placeholder=“(XX) XXXXX-XXXX”>”, um telefone com 9 dígitos e o DDD.
+
+Eu vou marcar o input do WhatsApp com uma opção chamada “checked”, ou seja, “marcado”. Essa sugestão é a primeira a ser marcada, e, quando eu recarrego a minha página, o WhatsApp já está marcado. Eu posso sempre trocar, mas o WhatsApp vai ser a primeira marcada.
+
+A primeira é a divisão, quando temos um campo e um texto, ou vários campos referentes a alguma coisa, não usamos a tag div, usamos a tag fieldset. Ela é referente à configuração de um ou mais campos referentes a um assunto específico.
+<fieldset>
+
+E dentro de um fieldset não temos parágrafos, nós temos o título, e o título de um fildset é chamado de legend.
+
+dentro do img, “Alt” é uma alternativa para quem não consegue ver aquela imagem ou se aquela imagem não está carregando corretamente, qual a alternativa daquilo? E usamos o áudio para descrever aquela imagem. Aqui vamos, por exemplo, escrever “Logo da Barbearia Alura”. A mesma coisa nós vamos fazer na imagem de rodapé. Vamos adicionar um “alt” que vai ter o mesmo conteúdo, “Logo da Barbearia Alura”.
+
+O que são transições?
+A config no css 'transition' representa uma transição e nela eu consigo configura alguns segundo, ex: 
+transition: 1s background; mas pode se usar o'all' que é tudo
+isso e a transição demora um 1 seg na cor de fundo 
+
+a config 'cursor: pointer;' e o mouse com a mãozinha
+
+Então, no nosso CSS, quando colocarmos o mouse por cima do botão de enviar, eu quero que ele aumente em 20%. Para isso, eu vou usar a propriedade transform e o valor dentro dela é o “scale”, ou seja, de escala e medida, e eu quero que ele aumente 20%. Aqui fazemos um cálculo proporcional, eu quero multiplicar ele por 1.2, “transform: scale(1.2);”.
+ex: transform: scale(1.2);
+
+transform: rotate(70deg); = vira
+
+Tabela basica
+ e a tag da tabela é a tag <table>. O que é uma tabela? Uma tabela é uma sequência de linhas e colunas. É exatamente isso que precisamos fazer com o CSS. Uma linha é uma <tr>, e nós teremos quatro linhas. Em cada uma das linhas, teremos duas células, e a célula se chama <td>. Então em cada uma das linhas teremos duas <td>.
+ a tag <td> para marcar uma coluna de uma tabela.
+a tag <tr> para marcar uma linha de uma tabela. ex: 
+	<tr>
+	   <td>
+	   </td>
+	</tr>
+
+Tags semânticas para tabelas
+Dentro de uma tabela, podemos separá-la em três: o cabeçalho, o conteúdo e o rodapé.
+e o corpo da tabela é o <tbody>. Todas essas três linhas vão estar dentro do <tbody>, e nós o fechamos aqui embaixo.
+
+Estilos na tabela
+CSS e começar criando a referência para a tag da tabela. Aqui eu quero só criar um espaçamento externo de talvez 20 pixels para cima e 40 pixels para baixo “margin: 20px 0 40px;”. Eu quero deixá-la bem espaçada do meu botão e do meu rodapé.
+	Agora eu quero mexer no cabeçalho para botar uma cor de fundo e destacá-lo. O cabeçalho, nós vimos que a tag é “thead”. Vamos então tentar usar isso. Vamos colocar um background aqui com a cor #555555, um cinza “background: #555555;”. Quando eu salvo e recarrego a página, o fundo do meu cabeçalho já está no cinza escuro. Para isso ficar ainda melhor, preciso deixar cor desse item em branco e a fonte desse item em negrito, “font-weight: bold”. Salvar e recarregar, já tem o dia e o horário.
+
+agora nos itens da minha tabela, no “td” das minhas células, eu quero que eles tenham uma borda de 1 pixel, essa borda eu quero que seja sólida e que seja da cor preta “border: 1px solid #000000;”. Se eu recarregar, todos os itens da minha tabela, do conteúdo da minha tabela, já estão com a borda preta. so coloca a virgula depois do td e escrever th assim:
+td, th {
+}

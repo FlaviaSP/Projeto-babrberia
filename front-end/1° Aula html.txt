@@ -1,0 +1,146 @@
+as tags ..
+H = são para titulos e tem 6 dessas exemplos: 
+ <h1></h1>
+ <h2></h2> e assim sucessivamente ate o <h6></h6>
+
+P = tags para paragrafos:
+ <p></p>
+
+Existem diferenças entre as tags do HTML?
+Sim, as tags são semânticas e para cada uma delas temos um significado e um resultado diferente
+
+Editar os textos 
+transformar para um texto em distaque no caso uma frase usar as tag: 
+ <strong></strong> = deixa a frase em negrito, lembrando que essa tags tem que esta posicionada no começo e no fim da frase.
+
+Agora deixar o texto em italico utilizar a tag:
+ <em></em> lembrando que essa tags tem que esta posicionada no começo e no fim da frase.
+
+A tag <!DOCTYPE html> serve para o navegador entender que estamos usando html na versao 5.
+
+A tag <html> é uma tag de conteudo então ela abre na primeira linha e fecha na ultima de todo o conteudo, pq ela serve pra informar que sendo sintexada o conteudo em html:
+ <html></html>
+
+A tag <meta> dentro tem uma propriedade (charset) que é o caractere  (= "UTL 8") que é o dicionario que irei utilizar e fica assim: 
+  <meta charset="utf-8">
+Com isso todos os caracteres e acentos são concertados
+
+!!!DEntro da tag <html> informar qual linguagem ex: portugues  e fica assim: <html lang="pt-br">
+
+A tag <title> que é o titulo da pagina, então ao inves de aparece o index, sera o nome que vc escolher... 
+ <title> bla bla </title>
+
+
+A tag <head> dentro dela e onde voce coloca as informações que vc quer passar pro navegador ex: o meta que é o dicionario que vamos utilizar.
+
+
+A tag <body> dentro dela são as informações para pagina que quero exibir 
+
+
+Para melhorar.. usa-se o CSS 
+Neste caso coloque a propriedade do css dentro do que quer modificar ex:
+ <p style="">
+
+Assim voce consegue colocar o que quer mudar neste paragrafo ...
+
+Agora vamos aumentar a fonte e usa a propriedade 'font-size e a quantidade de pixels' ex:
+ <p style="font-size: 20px">
+
+Para centralizar o conteudo 
+Usa a conteudo 'text-align' e fica assim na pratica:
+ <h1 style="text-align: center">
+
+
+Organizando o estilo
+
+Dentro do tag <head> que onde passamos infromações para o navegador, criar uma tag <style> para assim configuramos os conteudo como um todo, exemplo caso queira centralizar o conteudo dos paragrafos faça assim: 
+ <head>
+	<style>
+  	  p {
+		text-align: center
+	    }
+	</style>
+ </head>
+
+O 'p' foi mencionado porque é os paragrafos que queremos centralizar e depois as {} é para colocar o conteudo no caso foi o text-align mas poderia ser o font-size ou qualquer outro ..
+
+Arquivo CSS
+quando o arquivo esta em outra pagina (q é comum ) vamos configurar para que o html veja o css:
+primeiro: a pagina do css tem que esta na mesma pasta que o html
+segundo: crie a pagina como o nome ex: style.css
+terceiro: no html use a tag 'link' que é para conexão de um link para o outro 
+quarto: informar a relação 'rel' 
+quinto: o valor 'stylesheet'
+sexto: informar onde esta a pagina usando a tag 'href' que a referencia onde esta 
+ com isso na pagina html fica assim: 
+ <link rel="stylesheet" type="text/css" href="style.css">
+
+Mudar de Cor
+o conteudo 'background' é o fundo então pode colocar imagem, cor .. 
+
+o conteudo 'color' é a cor do texto
+
+no caso quando precisar especificar e ter dois nomes iguais usar algo especifico ex: 'strong' tem dois mas strong com 'em' so tem um 
+
+!!! Podemos representar a cor vermelha com o nome red, o hexadecimal #FF0000 e o RGB rgb(255,0,0).!!!!
+
+!!!A mexer na apresentação dos textos
+No alinhamento deles (text-align)
+No tamanho da fonte (font-size)
+Na cor de fundo (background)
+Na cor do texto (color)!!!!
+
+Para especificar um conteudo para mexer no Css, usa o conteudo 'ID = ""' dentro dessas "" coloca o nome que vc quiser, e com esse nome que vai mexer no css ex:
+ <p id="missao"> 
+
+Quando temos um identificador no html, no css usa-se a #e o nome ..
+
+Adicionar a imagem 
+a tag <img> serve para chamar a imagem e em seguida a onde esta a imagem usando o 'scr=""' exemplo:
+ <img src="img/banner.jpg">
+
+entao esta sendo usado a tag img com a propriedade src e o caminho da imagem 
+
+Css para iamgens
+height: altura
+border: border
+padding: espaçamento interno 
+padding-top: espaçamento so no topo
+margin: espaçamento externo
+width: largur
+
+Trabalhando com listas
+tags de listas de ordenadas e não ordenadas
+ Lista não ordenada = ul
+ Lista ordenada = ol
+
+tbm tem a tag 'li': <li></li> para ter a bolinha no começo
+
+Agora vamos usar uma classe, ja que podemos repetir e o identiicador não permiti reperi, então dentro da tag que vc quer modificar adicione 'class=""' e ficará mais ou menos assim, e lembrando que no css o Id e mencionado com # ja á class e com '.' : 
+
+!!!! ID para conteudos unicos 
+     Class para conteudos que vão ser repitidos!!!!!!!	
+
+Font-style : tipo de fonte
+
+Conceito de divisão de conteudo
+ a tag <div> serve para marca o conteudo para mexer no css
+
+Existem dois conceitos importantes block e inline. 
+Block = normalmente quando temos um conteudo como por exemplo um paragrafo, o restante do espaço em branco fica block, como proibisse qualquer coisa ali..
+
+Inline = as imagens e permite colocar novas coisas ali..
+
+e existe os dois juntos que é 'block - inline que tem um bloqueia mas da pra se usar o espaço em branco, como faz: no css usar 'display' la vc define block, inline ou inline-block: 
+ ul {
+	display: inline-block;
+}
+
+Vale ressaltar que por padrão a linha sempre fica alinhada com a linha de baixo, mas se quiser como a linha superior usar a marcação ' vertifical-align' e ficara assim:
+ ul {
+	display: inline-block;
+	vertical-align: top;
+}
+
+Cabeçalho
+tag de cabeçalho 'header', 

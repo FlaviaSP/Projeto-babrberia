@@ -1,0 +1,79 @@
+Estruturando a navegação
+A tag <a></a> essa tag e a ancora e para ser usada basta colcoa na frente do conteudo e dentro do primeiro <a> tem que colocar o href que pra indicar para onde tem que ir, ex:
+( serve justamente como uma âncora, um link, que vai nos levar para outro ponto na internet.)
+ <header>
+    <ul>
+	<li><a href="index.html"> Home </li></a>
+	<li><a href="produtos.html">Produtos</li></a>
+	<li>Contatos</li>
+    </ul>
+ </header>
+ #veja que dentro do li existe a tag <a> com link dentro 
+
+!!! dica  se quiser colocar uma pagina, dentro href colocar o site que quer direcionar e pronto !!!
+
+Como o menu vai ser navegação, ao inves e criar um class, usamos uma tag nova do html5 que é <nav></nav> colocamos oq queremos e no css estilizamos.
+
+'' text-transform : uppercase; deixa as letras grandes ''
+'' font-weight: bold; peso da fonte 'negrito' e o bld e preto
+'' text-decoration: none; tirar o sublinhado do texto ''
+
+
+reset css
+reset CSS, o que que o reset CSS faz?
+ Ele é um arquivo de CSS, que limpa tudo o que o navegador cria, esse arquivo, vocês vão ver como é a criação disso, todas as tags estão aqui e elas tem a margem zerada, o padding zerado, a borda zerada, a fonte configurada, o tipo de fonte que ela está herdando.
+
+ Enfim, vários detalhes visuais são consertados a partir desse arquivo aqui e repare que ele está mexendo em dezenas de tags aqui. Se a gente entrar no site, a gente vai ver a história do CSS reset e porque que ele foi feito, por quem ele foi feito e como agradecer às pessoas que criaram o CSS reset.
+
+e fica assim:
+  <link rel="stylesheet" href="reset.css"> lembrando que é dentro do <head> e tem que ser antes do nossos link
+
+
+Posicionamento
+a tag position = para mexer na posição, a propriedade que vem  a seguir e absolute, mas existe outras a 'absolute' eu consigo posicionar meu elemento em qualquer lugar da página.
+
+
+Divisões semânticas
+Vamos começar colando a tag da parte principal depois do cabeçalho, a tag e <main></main> e dentro dessas tag vai esta nosso conteudo 
+
+A propriedade '' box-sizing: border-box; '' serve pra fixar a largura e com isso nao altera o codigo
+
+!!! comportamento do elemento quando adiciono padding: O elemento aumenta o seu tamanho. Quando declaro que existe um espaçamento interno, estou aumentando o conteúdo. !!!
+
+Bordas 
+tem três conceitos importantes para criar a borda que são tamanho, tipo e cor, sendo:
+ border-color = a cor
+ border-width = largura
+ border-style = estilo 
+mas para usar os três, pasta colocar 'border' e fica assim:
+border: #000_cor 2px_largura solid_estilo;
+
+Bordas arredondadas
+usa o 'border-radius' e tem varios px que pode se colocar no valor ex:
+ border-radius: 5px;
+ border-radius: 10px; e assim sucessivamente
+
+Pseudo-classes de estado:
+quando passar o mouse mudar de cor, e se faz assim .. 
+(hover = mapear) e para utilizar deve menicionar a onde vai ter esse mapeamento e fica assim:
+nav a:hover {
+}
+dentro pode estilizar da forma q achar melhor como ex: por uma cor..
+
+tbm tem quando estar ativo usa-se o active ex:
+nav a:active {
+} então quando clica e segura ele muda de cor ..
+
+quando quer mudar a cor da fonte, ao passar o mouse especifique assim:
+
+nav a: houver h2 {
+}
+
+Rodapé 
+a tag é a <footer> serve para colocar as infromações do rodapé, para adicionamos uma imagem de fundo em um elemento? Com valor url no background do elemento ficando assim:
+footer {
+	background: url("img/bg.jpg");
+}
+
+Caracteres especiais
+usar o 'uncode' 
